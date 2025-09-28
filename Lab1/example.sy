@@ -1,0 +1,55 @@
+// 一、全局变量声明
+int global_int = 1;
+const float global_float = 2.0;
+
+// 二、简单函数：加法运算
+int add(int a, int b) {
+    return a + b;  // 三、数值运算：加法
+}
+
+// 主函数
+int main() {
+    // 局部变量声明与赋值
+    int a = 1;
+    int b = 2;
+    int c;
+    float f;
+    
+    // 赋值语句
+    c = a + b;  // 数值运算：加法
+    
+    // 四、条件分支语句
+    if (c > 2) {  // 五、关系运算：大于
+        c = 1;
+    } else {
+        c = 2;
+    }
+    
+    // 六、循环语句
+    while (a < 3) {  // 关系运算：小于
+        a = a + 1;   // 数值运算：加法
+    }
+    
+    // 七、类型转换：int 转 float
+    f = c;
+    
+    // 八、函数调用
+    c = add(a, b);
+    
+    // 九、库函数调用（I/O）
+    putint(c);       // 输出整数
+    putch(10);       // 输出换行符（ASCII 10）
+    
+    // 十、数组操作
+    int arr[2];
+    arr[0] = 1;
+    arr[1] = 2;
+    putarray(2, arr);  // 输出数组
+    
+    // 十一、浮点数操作
+    f = getfloat();    // 输入浮点数
+    putfloat(f);       // 输出浮点数
+    putch(10);
+    
+    return 0;
+}
